@@ -1,0 +1,266 @@
+// for pc
+@media (min-width: 1020px) {
+  section.teamContainer {
+    height: 850px;
+    width: 100%;
+    background: whitesmoke;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    h1.mainTeamHeading {
+      font-size: 40px;
+      font-weight: lighter;
+      margin: 20px 0 20px 0;
+    }
+    div.teamButtons {
+      height: 150px;
+      width: 100%;
+      @include flex;
+
+      button {
+        height: 100px;
+        width: 180px;
+        cursor: pointer;
+        padding: 10px;
+        outline: none;
+        border: none;
+        background: $mainColor;
+        margin-left: 20px;
+        color: white;
+        font-size: 18px;
+        transition: 0.5s;
+
+        &:hover {
+          background: $secondColor;
+          outline: 10px solid $secondColor;
+          font-size: 20px;
+        }
+      }
+      button.selected {
+        background: $secondColor;
+        outline: 10px solid $secondColor;
+        font-size: 20px;
+      }
+    }
+    div.teamInfo {
+      width: 90%;
+      height: 600px;
+      @include flex;
+
+      div.leftTeam {
+        height: 100%;
+        width: 40%;
+        @include flex;
+
+        img {
+          width: 80%;
+          height: auto;
+        }
+      }
+      div.rightTeam {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        h1.memberName {
+          margin-bottom: 10px;
+          font-size: 28px;
+        }
+        h3.memberTitle {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          color: grey;
+        }
+        em.memberSkills {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        p.memberPara {
+          width: 400px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+// for tab
+@media (min-width: 760px) and (max-width: 1020px) {
+  section.teamContainer {
+    height: 750px;
+    width: 100%;
+    background: whitesmoke;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    h1.mainTeamHeading {
+      font-size: 40px;
+      font-weight: lighter;
+      margin: 20px 0 20px 0;
+    }
+    div.teamButtons {
+      height: 150px;
+      width: 100%;
+      @include flex;
+
+      button {
+        height: 80px;
+        width: 120px;
+        cursor: pointer;
+        padding: 10px;
+        outline: none;
+        border: none;
+        background: $mainColor;
+        margin-left: 20px;
+        color: white;
+        font-size: 14px;
+        transition: 0.5s;
+
+        &:hover {
+          background: $secondColor;
+          outline: 10px solid $secondColor;
+          font-size: 20px;
+        }
+      }
+      button.selected {
+        background: $secondColor;
+        outline: 10px solid $secondColor;
+        font-size: 20px;
+      }
+    }
+    div.teamInfo {
+      width: 90%;
+      height: 400px;
+      @include flex;
+
+      div.leftTeam {
+        height: 100%;
+        width: 40%;
+        @include flex;
+
+        img {
+          width: 80%;
+          height: auto;
+        }
+      }
+      div.rightTeam {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        h1.memberName {
+          margin-bottom: 10px;
+          font-size: 28px;
+        }
+        h3.memberTitle {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          color: grey;
+        }
+        em.memberSkills {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        p.memberPara {
+          width: 400px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+// for mob
+@media (max-width: 760px) {
+  section.teamContainer {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    h1.mainTeamHeading {
+      font-size: 40px;
+      font-weight: lighter;
+      margin: 20px 0 20px 0;
+    }
+    div.teamButtons {
+      height: 300px;
+      order: 3;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-flow: column wrap;
+      align-items: center;
+
+      button {
+        height: 50px;
+        width: 150px;
+        margin-bottom: 10px;
+        border: 1px solid grey;
+        background: $secondColor;
+        color: white;
+        outline: none;
+        transition: 0.5s;
+      }
+      button.selected {
+        background: $mainColor;
+        border: none;
+      }
+    }
+    div.teamInfo {
+      height: 600px;
+      width: 100%;
+
+      div.leftTeam {
+        height: 40%;
+        width: 100%;
+        @include flex;
+
+        img {
+          height: 80%;
+          border-radius: 100%;
+        }
+      }
+      div.rightTeam{
+          height: 60%;
+          width: 100%;
+          @include flex;
+          justify-content: flex-start;
+          flex-flow: column;
+
+          h1.memberName {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 28px;
+          }
+          h3.memberTitle {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: grey;
+          }
+          em.memberSkills {
+            margin-top: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+          p.memberPara {
+            width: 240px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+      }
+    }
+  }
+}

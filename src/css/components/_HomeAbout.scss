@@ -1,0 +1,256 @@
+// for pc
+@media(min-width: 1020px){
+
+    section.about{
+        height: auto;
+        min-height: 700px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        text-align: center;
+        background: whitesmoke;
+        @include flex;
+        flex-flow: column;
+
+        div.heading{
+            width: 70%;
+            min-width: 1000px;
+
+            h1{
+                font-size: 50px;
+                margin-bottom: 60px;
+
+                span{
+                    color: $mainColor;
+                }
+                
+            }
+        }
+
+        div.paragraph{
+            height: auto;
+            min-height: 100px;
+            width: 70%;
+            min-width: 1000px;
+
+            p{
+                font-size: 21px;
+            }
+        }
+
+        div.experties{
+            min-height: 400px;
+            width: 70%;
+            min-width: 1000px;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+            
+
+            div.expertStats{
+                height: auto;
+                width: 400px;
+                padding: 50px;
+
+                h1{
+                    font-size: 25px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 18px;
+                }
+
+                h1.qualityHeading{
+                    &::before{
+                        content: url(../images/quality3.svg);
+                    }
+                }
+                h1.evolutionHeading{
+                    &::before{
+                        content: url(../images/innovation1.svg);
+                    }
+                }
+
+                h1.expertHeading{
+                    
+                    &::before{
+                        content: url(../images/expertise1.svg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// for tab
+@media(min-width:760px)and( max-width: 1020px){
+
+    section.about{
+        height: auto;
+        min-height: 700px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        text-align: center;
+        @include flex;
+        background: whitesmoke;
+        flex-flow: column;
+
+        div.heading{
+            width: 70%;
+
+            h1{
+                font-size: 50px;
+                margin-bottom: 60px;
+
+                span{
+                    color: $mainColor;
+                }
+                
+            }
+        }
+
+        div.paragraph{
+            height: auto;
+            min-height: 100px;
+            width: 70%;
+
+            p{
+                font-size: 21px;
+            }
+        }
+
+        div.experties{
+            min-height: 400px;
+            width: 70%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            
+
+            div.expertStats{
+                height: auto;
+                width: 400px;
+                padding: 50px;
+                padding-bottom: 0px;
+
+                h1{
+                    font-size: 25px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 18px;
+                }
+
+                h1.qualityHeading{
+                    &::before{
+                        content: url(../images/quality3.svg);
+                    }
+                }
+                h1.evolutionHeading{
+                    &::before{
+                        content: url(../images/innovation1.svg);
+                    }
+                }
+
+                h1.expertHeading{
+                    &::before{
+                        content: url(../images/expertise1.svg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// for phone
+@media(max-width: 760px){
+
+    section.about{
+        height: auto;
+        min-height: 700px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        text-align: center;
+        background: whitesmoke;
+        @include flex;
+        flex-flow: column;
+
+        div.heading{
+            width: 70%;
+
+            h1{
+                font-size: 40px;
+                margin-bottom: 60px;
+
+                span{
+                    color: $mainColor;
+                }
+                
+            }
+        }
+
+        div.paragraph{
+            height: auto;
+            min-height: 100px;
+            width: 70%;
+
+            p{
+                font-size: 21px;
+                text-align: justify;
+            }
+        }
+
+        div.experties{
+            height: auto;
+            min-height: 400px;
+            width: 90%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            
+
+            div.expertStats{
+                height: auto;
+                width: 400px;
+                padding: 50px;
+                padding-bottom: 0px;
+
+                h1{
+                    font-size: 25px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 15px;
+                    text-align: justify;
+                }
+
+                h1.qualityHeading{
+                    &::before{
+                        content: url(../images/quality3.svg);
+                    }
+                }
+                h1.evolutionHeading{
+                    &::before{
+                        content: url(../images/innovation1.svg);
+                    }
+                }
+
+                h1.expertHeading{
+                    &::before{
+                        content: url(../images/expertise1.svg);
+                    }
+                }
+            }
+        }
+    }
+}

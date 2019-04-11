@@ -1,0 +1,55 @@
+// import fonts here if needed
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,800');
+// import fonts here if needed
+
+// Import variables here
+@import"variables/AllVariables";
+// Import variables here
+
+// import mixins here
+@import"mixins/Flex";
+@import"mixins/Btn";
+// import mixins here
+
+// reset settings here
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:$fontFamily;
+    scroll-behavior: smooth;
+}
+body{
+    background: white;
+    height: auto;
+}
+// reset settings here
+
+// import all the components here
+@import"components/UpperNav";
+@import"components/LowerNav";
+@import"components/NavMob";
+@import"components/Home";
+@import"components/HomeAbout";
+@import"components/HomeServices";
+@import"components/Contact";
+@import"components/Team";
+@import"components/Footer";
+// import all the components here
+
+
+
+// // for pc
+// @media(min-width:1020px){
+
+// }
+// // for tab
+// @media(min-width:760px) and (max-width:1020px){
+
+// }
+// // for mob
+// @media(max-width:760px){
+
+// }

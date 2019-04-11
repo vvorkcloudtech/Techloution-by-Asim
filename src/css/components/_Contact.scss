@@ -1,0 +1,31 @@
+// for pc
+@media(min-width:1020px){
+
+    section.contact{
+        height: 900px;
+        width: 100%;
+        background: rgba(1, 190, 231, 0.5);
+        @include flex;
+        padding-bottom: 150px;
+
+        form.form{
+            height: 700px;
+            width: 700px;
+            border: 1px solid white;
+            background: rgba(19, 67, 104,0.7);  
+            @include flex;
+            justify-content: center;
+            flex-flow: column;
+        }
+    }
+
+
+}
+// // for tab
+// @media(min-width:760px) and (max-width:1020px){
+
+// }
+// // for mob
+// @media(max-width:760px){
+
+// }

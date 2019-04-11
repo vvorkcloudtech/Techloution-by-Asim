@@ -1,0 +1,226 @@
+// for pc
+@media (min-width: 1020px) {
+  section.services {
+    background: white;
+    min-height: 700px;
+    width: 100%;
+    @include flex;
+    flex-flow: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h1.serviceHeading {
+      font-size: 50px;
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    div.Servicecontainer {
+      height: auto;
+      min-width: 950px;
+      width: 90%;
+      @include flex;
+      flex-flow: row wrap;
+
+      div.service {
+        height: 300px;
+        width: percentage(4/16);
+        @include flex;
+        flex-flow: column;
+        color: $secondColor;
+        border: 1px solid $secondColor;
+
+        transition: 0.5s;
+
+        &:hover {
+          color: white;
+          background: $secondColor;
+          cursor: pointer;
+        }
+
+        i.serviceIcon {
+          font-size: 60px;
+          margin-bottom: 10px;
+        }
+        h2.serviceTitle {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        p.servicePara {
+          text-align: center;
+        }
+      }
+    }
+  }
+  section.tech{
+    min-height: 800px;
+    width: 100%;
+    @include flex;
+    flex-flow: column;
+
+    h1.techHead{
+      font-size: 50px;
+      color: black;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    div.techCon{
+      height: 800px;
+      width: 100%;
+      background: url(../images/tech.jpg);
+      background-attachment: fixed;
+      background-position:  0 100px ;
+      filter: grayscale(100%);
+    }
+  }
+}
+// for tab
+@media (min-width: 760px) and (max-width: 1020px) {
+  section.services {
+    background: white;
+    min-height: 700px;
+    width: 100%;
+    @include flex;
+    flex-flow: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h1.serviceHeading {
+      font-size: 50px;
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    div.Servicecontainer {
+      height: auto;
+      min-width: 750px;
+      width: 90%;
+      @include flex;
+      flex-flow: row wrap;
+
+      div.service {
+        height: 300px;
+        width: percentage(2/4);
+        @include flex;
+        flex-flow: column;
+        color: $secondColor;
+        border: 1px solid $secondColor;
+
+        transition: 0.5s;
+
+        &:hover {
+          color: white;
+          background: $secondColor;
+          cursor: pointer;
+        }
+
+        i.serviceIcon {
+          font-size: 60px;
+          margin-bottom: 10px;
+        }
+        h2.serviceTitle {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        p.servicePara {
+          text-align: center;
+        }
+      }
+    }
+  }
+  section.tech{
+    min-height: 800px;
+    width: 100%;
+    @include flex;
+    flex-flow: column;
+
+    h1.techHead{
+      font-size: 50px;
+      color: black;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    div.techCon{
+      height: 800px;
+      width: 100%;
+      background: url(../images/tech.jpg);
+      background-attachment: fixed;
+      background-position:  0 100px ;
+      filter: grayscale(100%);
+    }
+  }
+}
+// for mob
+@media (max-width: 760px) {
+  section.services {
+    background: white;
+    min-height: 700px;
+    width: 100%;
+    @include flex;
+    flex-flow: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h1.serviceHeading {
+      font-size: 50px;
+      color: black;
+      margin-bottom: 20px;
+      text-align: center;
+      width: 300px;
+    }
+
+    div.Servicecontainer {
+      height: auto;
+      min-width: 300px;
+      width: 90%;
+      @include flex;
+      flex-flow: row wrap;
+
+      div.service {
+        height: 300px;
+        width: percentage(2/4);
+        @include flex;
+        flex-flow: column;
+        color: $secondColor;
+
+        transition: 0.5s;
+
+        
+
+        i.serviceIcon {
+          font-size: 60px;
+          margin-bottom: 10px;
+        }
+        h2.serviceTitle {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        p.servicePara {
+          text-align: center;
+        }
+      }
+    }
+  }
+  section.tech{
+    min-height: 800px;
+    width: 100%;
+    @include flex;
+    flex-flow: column;
+
+    h1.techHead{
+      font-size: 50px;
+      color: black;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    div.techCon{
+      height: 800px;
+      width: 100%;
+      background: url(../images/tech.jpg);
+      background-attachment: fixed;
+      background-position:  0 100px ;
+      filter: grayscale(100%);
+    }
+  }
+}
